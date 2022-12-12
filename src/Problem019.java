@@ -15,6 +15,9 @@ a dla długości trzy to:
 
  */
 
+// COŚ W ZADANIU JEST NIE TAK, POPRAWIĆ JE !!!!
+
+
 import java.util.Scanner;
 
 public class Problem019 {
@@ -37,7 +40,7 @@ public class Problem019 {
 
     private static void printRow(int waveLength, String rowElement){
         for(int i=0; i<waveLength;i++){
-            System.out.println(rowElement);
+            System.out.print(rowElement);
         }
         System.out.println();
     }
