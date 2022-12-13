@@ -1,3 +1,12 @@
+/*
+ZADANIE 22
+Napisz mechanizm szyfrujący i deszyfrujący wykorzystujący szyfr cezara
+Tekst jawny: MEZNY BADZ, CHRON PULK TWOJ I SZESC FLAG
+Tutaj przesunięcie = 2
+Tekst zaszyfrowany: OGBPA DCFB, EJTQP RWNM VYQL K UBGUE HNCI
+
+ */
+
 public class Problem022 {
     public static void main(String[] args) {
         String encryptedTxt = encrypt("MEznY BaDZ, CHRON PULK TWOJ I SZESC FLAG@@##123", 2);
