@@ -10,21 +10,24 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Regex001 {
-            private static final Pattern pattern = Pattern.compile("p.*q");
+           // private static final Pattern pattern = Pattern.compile("p.*q");
 
             public static void main(String[] args) {
-                validate("pdfdfgdfsg");
-                validate("pq");
-                validate("p5235325236q");
-                validate("pqqqqq");
+
+                RegexTester tester = new RegexTester("p.*q");
+
+                tester.validate("pdfdfgdfsg");
+                tester.validate("pq");
+                tester.validate("p5235325236q");
+                tester.validate("pqqqqq");
             }
 
-            private static void validate(String text) {
-                Matcher matcher = pattern.matcher(text);
-                if (matcher.matches()) {
-                    System.out.println("Prawda dla tekstu: " + text);
-                } else {
-                    System.out.println("Fałsz dla tekstu: " + text);
-                }
-            }
+//            private static void validate(String text) {
+//                Matcher matcher = pattern.matcher(text);
+//                if (matcher.matches()) {
+//                    System.out.println("Prawda dla tekstu: " + text);
+//                } else {
+//                    System.out.println("Fałsz dla tekstu: " + text);
+//                }
+//            }
         }
